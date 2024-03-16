@@ -3,12 +3,12 @@
 3. git commit -m "initial commit"
 4. git branch -M main
 5. git remote add origin https://github.com/USERNAME/REPO.git
-6. git remote set-url origin https://USERNAME:<MYTOKEN>@github.com/USERNAME/REPO.git
+6. git remote set-url origin https://USERNAME:<TOKEN>@github.com/USERNAME/REPO.git
 7. git push --set-upstream origin main
 
-Next Time Onwards
+Next time Onwards
 ======================
 1. git pull
 2. git add .
 3. git commit -m "some message"
-4. git push
+4. git  push
