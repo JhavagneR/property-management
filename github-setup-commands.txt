@@ -7,7 +7,7 @@
 7. git push --set-upstream origin main
 
 Next Time Onwards
-=========================
+======================
 1. git pull
 2. git add .
 3. git commit -m "some message"
