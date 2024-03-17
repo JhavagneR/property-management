@@ -2,7 +2,6 @@ package com.mycompany.propertymanagement.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import jakarta.persistence.Column;
 import lombok.Getter;
 import lombok.Setter;
 
