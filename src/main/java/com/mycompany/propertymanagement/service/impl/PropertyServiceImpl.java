@@ -6,6 +6,7 @@ import com.mycompany.propertymanagement.entity.PropertyEntity;
 import com.mycompany.propertymanagement.repository.PropertyRepository;
 import com.mycompany.propertymanagement.service.PropertyService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -14,6 +15,8 @@ import java.util.Optional;
 
 @Service
 public class PropertyServiceImpl implements PropertyService {
+    @Value("${pms.dummy:}")
+    private String dummy;
     @Autowired
     private PropertyRepository propertyRepository;
 
@@ -48,8 +51,6 @@ public class PropertyServiceImpl implements PropertyService {
             PropertyEntity pe = optEn.get();
             pe.setTitle(propertyDTO.getTitle());
             pe.setAddress(propertyDTO.getAddress());
-            pe.setOwnerEmail(propertyDTO.getOwnerEmail());
-            pe.setOwnerName(propertyDTO.getOwnerName());
             pe.setPrice(propertyDTO.getPrice());
             pe.setDescription(propertyDTO.getDescription());
             dto = propertyConverter.convertEntitytoDTO(pe);
